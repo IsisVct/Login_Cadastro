@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main id="container">
+        <form action="config.php" phpmethod="POST" id="login_form">
+            <div id="form_header">
+                <h1>Cadastro</h1>
+                <i id="mod_icon" class="fa-sharp fa-solid fa-moon"></i>
+            </div>
+            <div id="social_media">
+                <a href="#">
+                    <img src="img/icons8-facebook-48.png" alt="icons8-facebook-48">
+                </a>
+
+                <a href="#">
+                    <img src="img/icons8-google-logo-48.png" alt="Google">
+                </a>
+
+                <a href="#">
+                    <img src="img/icons8-github-50.png" alt="GitHub">
+                </a>
+                
+            </div>
+            <div id="input">
+                <div class="input_box">
+                    <label for="name">
+                        Crie seu Username
+                        <Div class="input_field">
+                            <i class="fa-solid fa-user"></i>
+                        <input type="text" name="nome" required>
+                        </Div>
+                        <br>
+                    </label>
+                    <label for="email">
+                        E-mail
+                        <Div class="input_field">
+                            <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" required>
+                        </Div>
+                        <br>
+                    </label>
+                    <label for="telefone">
+                        Telefone
+                        <Div class="input_field">
+                            <i class="fa-solid fa-phone"></i>
+                        <input type="tel" name="telefone" placeholder="(11) 11111-0000" required>
+                        </Div>
+                        <br>
+                    </label>
+                    <label for="password">
+                        Crie sua senha
+                        <Div class="input_field">
+                            <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" required>
+                        </Div>
+                        <br>
+                        
+                    </label>
+
+                    <label for="Data de nascimento">
+                        Data de Nascimento
+                        <Div class="input_field">
+                          
+                        <input type="date" name="data_nascimento" class="a" required >
+                        </Div >
+                        <br>
+                    </label>
+
+                    <p>Sexo:</p>
+                    <input type="radio" name="genero" value="feminino"required>
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+
+
+
+                    <div id="forgot_pass">
+                        <br>
+                        <a href="index.html">
+                            Já possui uma conta? Faça o Login
+                        </a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="entrar">
+                Criar conta
+            </button>
+        </form>
+    </main>
+    <script type="text/javascript " src="script.js"></script>
+</body>
+</html>
